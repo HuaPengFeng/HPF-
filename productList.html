@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/template-native.js"></script>
+    <title>书城-商品</title>
+</head>
+
+<body>
+    <div class="jd_layout">
+        <!-- 页面头部 -->
+        <div class="jd_header">
+            <div class="banxin clearfix">
+                <div class="f_right jd_header_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li id="login"><a href="./login.html">你好，请登录</a></li>
+                        <li class="active"><a href="./register.html">免费注册</a></li>
+                        <li><a href="cart.html">我的购物车</a></li>
+                        <li class="pRight"><a href="javascript:;">我的书城<span></span></a></li>
+                        <li><a href="javascript:;">书城会员</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo图标 -->
+        <div class="logo">
+            <div class="banxin">
+                <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 产品列表 -->
+        <div class="product_list">
+            <div class="header">
+                <!-- 动态生成 -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/template" id="templateId">
+    <div class="container">
+        <%=bookStr%>
+    </div>
+    <div class="product_list_box">
+        <div class="container">
+            <div class="row">
+                <%for(var j=0;j< product.length;j++){%>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="<%=product[j].img%>" alt="">
+                            <div class="caption">
+                                <p class="active">
+                                    <%=product[j].text%>
+                                </p>
+                                <p class="price">
+                                    <%=product[j].price%>
+                                </p>
+                                <p><a data-name="<%=bookStr%>" data-num="<%=j%>" href="javascript:;" class="btn btn-primary" role="button">加入购物车</a> <a data-name="<%=bookStr%>" data-num="<%=j%>" href="cart.html" class="btn btn-danger" role="button">立即购买</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <%}%>
+            </div>
+        </div>
+    </div>
+</script>
+<script>
+    $(function() {
+        $.ajax({
+            url: "./js/data.json",
+            type: "get",
+            async: true,
+            success: function(data) {
+                var arr = [];
+                for (var i = 0; i < data.length; i++) {
+                    if (str == data[i].type) {
+                        arr = data[i].item;
+                    }
+                }
+                console.log(arr)
+                var htmlStr = template("templateId", {
+                    product: arr,
+                    bookStr: str
+                })
+                $(".header").html(htmlStr);
+                //点击购买时，将商品信息添加到本地缓存
+                var arrPro = [];
+                $(".btn-primary").click(function() {
+                    var currentNum = $(this).attr("data-num");
+                    var currentArr = arr[currentNum];
+                    arrPro.push(currentArr)
+                    console.log(arrPro)
+                    var localDataStr = JSON.stringify(arrPro);
+                    console.log(localDataStr)
+                    window.localStorage.setItem("pro", localDataStr);
+                    alert("成功添加商品进入购物车");
+                    return;
+                })
+                $(".btn-danger").click(function() {
+                    var currentNum = $(this).attr("data-num");
+                    var currentArr = arr[currentNum];
+                    arrPro.push(currentArr)
+                    console.log(arrPro)
+                    var localDataStr = JSON.stringify(arrPro);
+                    console.log(localDataStr)
+                    window.localStorage.setItem("pro", localDataStr);
+                })
+            }
+        })
+
+        //切割字符串取出分类值
+        var url = window.location.href;
+        var book_name = "";
+        if (url.indexOf("?") > -1) {
+            // 切割字符串
+            book_name = url.split("?")[1].split("=")[1];
+        }
+        // 注意乱码 decodeURIComponent 解码
+        var str = decodeURIComponent(book_name);
+        console.log(str)
+    })
+
+    var userName = window.localStorage.getItem("useName");
+    var userNameJson = JSON.parse(userName)
+    console.log(userNameJson)
+    if (userNameJson != null) {
+        $("#login").html("账号:" + userNameJson.name);
+    }
+</script>

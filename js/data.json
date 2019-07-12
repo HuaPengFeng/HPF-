@@ -1,0 +1,578 @@
+[{
+    "type": "青春文学",
+    "item": [{
+        "img": "./image/young01.jpg",
+        "price": "￥39.80",
+        "text": "原来你也在这里"
+    }, {
+        "img": "./image/young02.jpg",
+        "price": "￥23.00",
+        "text": "愿你历尽千帆，归来仍是少年"
+    }, {
+        "img": "./image/young03.jpg",
+        "price": "￥31.90",
+        "text": "云边有个小卖部"
+    }, {
+        "img": "./image/young04.jpg",
+        "price": "￥34.00",
+        "text": "怦然心动（套装上下册 附：海报、书签、卡片）"
+    }, {
+        "img": "./image/young05.jpg",
+        "price": "￥32.10",
+        "text": "撒野（超人气作者巫哲至高人气代表作）"
+    }, {
+        "img": "./image/young06.jpg",
+        "price": "￥23.70",
+        "text": "我们最好的十年：苑子豪限量签名海报"
+    }, {
+        "img": "./image/young07.jpg",
+        "price": "￥20.70",
+        "text": "我的世界很小，但是刚刚好"
+    }, {
+        "img": "./image/young08.jpg",
+        "price": "￥31.10",
+        "text": "人间失格"
+    }, {
+        "img": "./image/young09.jpg",
+        "price": "￥38.60",
+        "text": "原时光清浅，许你欢颜"
+    }, {
+        "img": "./image/young10.jpg",
+        "price": "￥38.20",
+        "text": "她的嘴角微甜"
+    }, {
+        "img": "./image/young11.jpg",
+        "price": "￥31.10",
+        "text": "我们"
+    }, {
+        "img": "./image/young12.jpg",
+        "price": "￥31.10",
+        "text": "余生有你才安好"
+    }]
+}, {
+    "type": "小说类",
+    "item": [{
+        "img": "./image/novel01.jpg",
+        "price": "￥588.00",
+        "text": "全职高手珍藏版"
+    }, {
+        "img": "./image/novel02.jpg",
+        "price": "￥33.10",
+        "text": "人气作者墨香铜臭成名之作，晋江积分近140亿，连续一年蝉联晋江销售金榜、千字金榜、全站霸王票总榜冠军！随书附赠蓝家家训雅正集！"
+    }, {
+        "img": "./image/novel03.jpg",
+        "price": "￥519.00",
+        "text": "斗罗大陆3龙王传说1-28套装"
+    }, {
+        "img": "./image/novel04.jpg",
+        "price": "￥42.10",
+        "text": "招摇（全二册）"
+    }, {
+        "img": "./image/novel05.jpg",
+        "price": "￥196.10",
+        "text": "莽荒纪1-6册套装（共6册）"
+    }, {
+        "img": "./image/novel06.jpg",
+        "price": "￥18.60",
+        "text": "龙族3：黑月之潮（中）"
+    }, {
+        "img": "./image/novel07.jpg",
+        "price": "￥20.60",
+        "text": "龙族4奥丁之渊"
+    }, {
+        "img": "./image/novel08.jpg",
+        "price": "￥43.60",
+        "text": "六爻壹·鹏程万里"
+    }, {
+        "img": "./image/novel09.jpg",
+        "price": "￥25.60",
+        "text": "叶非叶-花火都市情感小说"
+    }, {
+        "img": "./image/novel10.jpg",
+        "price": "￥24.60",
+        "text": "哑舍·古董小传"
+    }, {
+        "img": "./image/novel11.jpg",
+        "price": "￥21.60",
+        "text": "元尊2：初试锋芒"
+    }, {
+        "img": "./image/novel12.jpg",
+        "price": "￥20.60",
+        "text": "神澜奇域：无双珠3"
+    }]
+}, {
+    "type": "文学名著",
+    "item": [{
+        "img": "./image/classics01.jpg",
+        "price": "￥145.50",
+        "text": "世界十大文学名著"
+    }, {
+        "img": "./image/classics02.jpg",
+        "price": "￥24.90",
+        "text": "了不起的盖茨比"
+    }, {
+        "img": "./image/classics03.jpg",
+        "price": "￥478.00",
+        "text": "世界二十大名著 全20册精装"
+    }, {
+        "img": "./image/classics04.jpg",
+        "price": "￥13.20",
+        "text": "文学名著·经典译林：欧也妮·葛朗台"
+    }, {
+        "img": "./image/classics05.jpg",
+        "price": "￥64.80",
+        "text": "文学名著·红与黑"
+    }, {
+        "img": "./image/classics06.jpg",
+        "price": "￥115.00",
+        "text": "世界十大名著全10册套装正版外国文学小说傲慢与偏见巴黎圣母院飘童年红与黑呼啸山庄悲惨世界大卫科波菲尔"
+    }, {
+        "img": "./image/classics07.jpg",
+        "price": "￥870.20",
+        "text": "文学名家名著：鲁迅全集（套装1－18册）"
+    }, {
+        "img": "./image/classics08.jpg",
+        "price": "￥36.80",
+        "text": "傲慢与偏见茶花女红与黑呼啸山庄原著译本无删减4册"
+    }, {
+        "img": "./image/classics09.jpg",
+        "price": "￥37.70",
+        "text": "文学名家名著：红楼梦（套装上下册）"
+    }, {
+        "img": "./image/classics10.jpg",
+        "price": "￥27.40",
+        "text": "文学名家名著：茶花女（两种封面，随机发货）"
+    }, {
+        "img": "./image/classics11.jpg",
+        "price": "￥23.00",
+        "text": "雾都孤儿（精装名译 原版全译本 新版）"
+    }, {
+        "img": "./image/classics12.jpg",
+        "price": "￥19.20",
+        "text": "文学名家名著：罗生门"
+    }]
+}, {
+    "type": "艺术类",
+    "item": [{
+        "img": "./image/artist1.jpg",
+        "price": "￥60.00",
+        "text": "Y理想国 陌生的经验 陈丹青艺术讲稿 精装 初次将自己的观看经验结集成书"
+    }, {
+        "img": "./image/artist2.jpg",
+        "price": "￥31.50",
+        "text": "中国名画世界名画全鉴 绘画知识名画欣赏"
+    }, {
+        "img": "./image/artist3.jpg",
+        "price": "￥49.80",
+        "text": "中国琵琶考级曲集（最新修订版 套装上下册）/音乐考级系列丛书"
+    }, {
+        "img": "./image/artist4.jpg",
+        "price": "￥30.10",
+        "text": "全国钢琴演奏考级作品集（新编第一版）"
+    }, {
+        "img": "./image/artist5.jpg",
+        "price": "￥45.60",
+        "text": "正版 萨克斯 一级～七级 中国音乐学院社会艺术水平考级通用教材 考试"
+    }, {
+        "img": "./image/artist6.jpg",
+        "price": "￥38.00",
+        "text": "此刻四季花开 200款巧夺天工的花朵主题"
+    }, {
+        "img": "./image/artist7.jpg",
+        "price": "￥77.40",
+        "text": "书艺东坡,央视纪录片《苏东坡》海外讲述人衣若芬教授倾情呈现摩羯男苏东坡的书法艺术。“百道好书”2019年3月榜-艺术类第2名。（上海古籍出版）"
+    }, {
+        "img": "./image/artist8.jpg",
+        "price": "￥19.80",
+        "text": "中外美术史学习辅导与习题集 绘画 > 绘画史"
+    }, {
+        "img": "./image/artist9.jpg",
+        "price": "￥19.80",
+        "text": "天下收藏系列——古玉鉴定（贰） 玩收藏"
+    }, {
+        "img": "./image/artist10.jpg",
+        "price": "￥19.90",
+        "text": "萌翻你的手帐简笔画10000例 飞乐鸟 简笔画大全 学画画手绘手账素材手帐书涂鸦绘本"
+    }, {
+        "img": "./image/artist11.jpg",
+        "price": "￥28.90",
+        "text": "文艺常识全真模拟试题艺术 "
+    }, {
+        "img": "./image/artist12.jpg",
+        "price": "￥31.60",
+        "text": "中国书画鉴定"
+    }, {
+        "img": "./image/young01.jpg",
+        "price": "￥39.80",
+        "text": "原来你也在这里"
+    }, {
+        "img": "./image/young02.jpg",
+        "price": "￥23.00",
+        "text": "愿你历尽千帆，归来仍是少年"
+    }, {
+        "img": "./image/young03.jpg",
+        "price": "￥31.90",
+        "text": "云边有个小卖部"
+    }, {
+        "img": "./image/young04.jpg",
+        "price": "￥34.00",
+        "text": "怦然心动（套装上下册 附：海报、书签、卡片）"
+    }, {
+        "img": "./image/young05.jpg",
+        "price": "￥32.10",
+        "text": "撒野（超人气作者巫哲至高人气代表作）"
+    }, {
+        "img": "./image/young06.jpg",
+        "price": "￥23.70",
+        "text": "我们最好的十年：苑子豪限量签名海报"
+    }, {
+        "img": "./image/young07.jpg",
+        "price": "￥20.70",
+        "text": "我的世界很小，但是刚刚好"
+    }, {
+        "img": "./image/young08.jpg",
+        "price": "￥31.10",
+        "text": "人间失格"
+    }, {
+        "img": "./image/young09.jpg",
+        "price": "￥38.60",
+        "text": "原时光清浅，许你欢颜"
+    }, {
+        "img": "./image/young10.jpg",
+        "price": "￥38.20",
+        "text": "她的嘴角微甜"
+    }, {
+        "img": "./image/young11.jpg",
+        "price": "￥31.10",
+        "text": "我们"
+    }, {
+        "img": "./image/young12.jpg",
+        "price": "￥31.10",
+        "text": "余生有你才安好"
+    }]
+}, {
+    "type": "动漫/幽默类",
+    "item": [{
+        "img": "./image/comic1.jpg",
+        "price": "￥25.80",
+        "text": "现货速发 疯了！桂宝.21 宝漫卷阿桂漫画"
+    }, {
+        "img": "./image/comic2.jpg",
+        "price": "￥63.80",
+        "text": "如果历史是一群喵 全套装2册 春秋战国篇"
+    }, {
+        "img": "./image/comic3.jpg",
+        "price": "￥26.80",
+        "text": "父与子全集15册 漫画彩图双语中英对照7-10岁百年经典儿童彩绘本卡通故事书搞笑"
+    }, {
+        "img": "./image/comic4.jpg",
+        "price": "￥105.00",
+        "text": "非人哉123全4册 一汪空气著 白茶幽灵使徒子荐 脑洞大开的漫画书 微博连载"
+    }, {
+        "img": "./image/comic5.jpg",
+        "price": "￥57.90",
+        "text": "漫画世界幽默系列：爆笑校园（1-10）"
+    }, {
+        "img": "./image/comic6.jpg",
+        "price": "￥48.00",
+        "text": "全套8册 爆笑虫子图画故事书第二季彩图注音版 3-6-8岁幼儿卡通"
+    }, {
+        "img": "./image/comic7.jpg",
+        "price": "￥19.80",
+        "text": "就喜欢你看不惯我又干不掉我的样子1  白茶网同款吾皇万睡巴扎黑"
+    }, {
+        "img": "./image/comic8.jpg",
+        "price": "￥300.00",
+        "text": "爆笑校园全套1-54册全集54册 卡通漫画书朱斌精选集漫画世界"
+    }, {
+        "img": "./image/comic9.jpg",
+        "price": "￥56.00",
+        "text": "整容游戏1+2 套装2册 漫画"
+    }, {
+        "img": "./image/comic10.jpg",
+        "price": "￥825.80",
+        "text": "海贼王漫画书全套1-82册 航海王尾田荣一郎著海盗王路飞乔巴ONE PIECE畅销日本动漫小说书籍"
+    }, {
+        "img": "./image/comic11.jpg",
+        "price": "￥433.00",
+        "text": "预订正版新版包邮 七龙珠漫画书全套全集1-42册完结篇 (卷42再见龙珠) 鸟山明"
+    }, {
+        "img": "./image/comic12.jpg",
+        "price": "￥713.85",
+        "text": "火影忍者漫画全套72卷【新版】"
+    }]
+}, {
+    "type": "娱乐时尚类",
+    "item": [{
+        "img": "./image/deration1.jpg",
+        "price": "￥63.00",
+        "text": "百变物语-穿搭造型指南"
+    }, {
+        "img": "./image/deration2.jpg",
+        "price": "￥27.70",
+        "text": "时尚旅游杂志2019年3月+2018年6/10月"
+    }, {
+        "img": "./image/deration3.jpg",
+        "price": "￥259.00",
+        "text": "英文原版How to be Parisian做优雅的巴黎"
+    }, {
+        "img": "./image/deration4.jpg",
+        "price": "￥37.00",
+        "text": "时尚家居2019年1.2月合刊总第265期"
+    }, {
+        "img": "./image/deration5.jpg",
+        "price": "￥162.00",
+        "text": "人像摄影杂志9本打包2017年4-12月"
+    }, {
+        "img": "./image/deration6.jpg",
+        "price": "￥25.00",
+        "text": "茶经述评 时尚生活饮茶 饮茶类书籍"
+    }, {
+        "img": "./image/deration7.jpg",
+        "price": "￥45.00",
+        "text": "【3本打包】世界时装之苑2019年5月"
+    }, {
+        "img": "./image/deration8.jpg",
+        "price": "￥17.00",
+        "text": "时尚芭莎女士版（2019年2月下)"
+    }]
+}, {
+    "type": "旅游类",
+    "item": [{
+        "img": "./image/trip1.jpg",
+        "price": "￥68.00",
+        "text": "图说天下·国家地理精华：左手梦想，右手旅行（学生彩图版共5册）"
+    }, {
+        "img": "./image/trip2.jpg",
+        "price": "￥27.00",
+        "text": "【现货速发】孤独星球杂志2019年4月 国内外"
+    }, {
+        "img": "./image/trip3.jpg",
+        "price": "￥11.00",
+        "text": "时尚旅游杂志2018年10月 地理旅行户外"
+    }, {
+        "img": "./image/trip4.jpg",
+        "price": "￥115.00",
+        "text": "备考2019年全国经济专业技术资格考试用"
+    }]
+}, {
+    "type": "地图/地理类",
+    "item": [{
+        "img": "./image/map1.jpg",
+        "price": "￥5.00",
+        "text": "中国地理常用知识地图（对开）"
+    }, {
+        "img": "./image/map2.jpg",
+        "price": "￥5.00",
+        "text": "世界地理常用知识地图（对开）"
+    }, {
+        "img": "./image/map3.jpg",
+        "price": "￥65.00",
+        "text": "北斗童书·中国"
+    }, {
+        "img": "./image/map4.jpg",
+        "price": "￥45.00",
+        "text": "中学地理知识地图册"
+    }]
+}, {
+    "type": "生活类",
+    "item": [{
+        "img": "./image/life1.jpg",
+        "price": "￥35.00",
+        "text": "把生活过成你想要的样子"
+    }, {
+        "img": "./image/life2.jpg",
+        "price": "￥83.00",
+        "text": "蔡澜三部曲：不如任性过"
+    }, {
+        "img": "./image/life3.jpg",
+        "price": "￥22.00",
+        "text": "不畏将来·不念过去——《我的前半生》"
+    }, {
+        "img": "./image/life4.jpg",
+        "price": "￥48.00",
+        "text": "愿你生活既有善良又有锋芒"
+    }, {
+        "img": "./image/life5.jpg",
+        "price": "￥36.00",
+        "text": "浮生六记（2018新版！无删减彩色插图珍藏本）"
+    }, {
+        "img": "./image/life6.jpg",
+        "price": "￥266.00",
+        "text": "大江大河四部曲（套装共4册）（史诗级电视剧《大江大河》原著小说，王凯、杨烁、董子健主演。一部描写改革开放的奇书。）"
+    }]
+}, {
+    "type": "育儿/成长类",
+    "item": [{
+        "img": "./image/son1.jpg",
+        "price": "￥38.00",
+        "text": "孙瑞雪著 捕捉儿童敏感期 教育孩子书籍"
+    }, {
+        "img": "./image/son2.jpg",
+        "price": "￥39.50",
+        "text": "郑玉巧育儿经 婴儿卷（全新修订彩色版）"
+    }, {
+        "img": "./image/son3.jpg",
+        "price": "￥88.00",
+        "text": "萌鸡小队正向育儿图画故事书（全6册）"
+    }, {
+        "img": "./image/son4.jpg",
+        "price": "￥108.00",
+        "text": "DK育儿百科全书 婴儿成长日日记"
+    }, {
+        "img": "./image/son5.jpg",
+        "price": "￥22.50",
+        "text": "早期教育与天才（权威珍藏本） "
+    }, {
+        "img": "./image/son6.jpg",
+        "price": "￥32.00",
+        "text": "情感依附：为何家会影响我的一生 "
+    }, {
+        "img": "./image/son7.jpg",
+        "price": "￥30.00",
+        "text": "陪孩子走过小学六年（全新增订版）"
+    }, {
+        "img": "./image/son8.jpg",
+        "price": "￥25.80",
+        "text": "哈佛家训全集 全彩精装图书 家长教育孩子看的书 男孩女孩"
+    }]
+}, {
+    "type": "保健/心理健康类",
+    "item": [{
+        "img": "./image/health1.jpg",
+        "price": "￥41.00",
+        "text": "儿童健康讲记：一个中医眼中的儿童健康与心理教育"
+    }, {
+        "img": "./image/health2.jpg",
+        "price": "￥31.50",
+        "text": "失眠疗愈 人气睡眠科普书，给失眠者的福气"
+    }, {
+        "img": "./image/health3.jpg",
+        "price": "￥81.00",
+        "text": "轻疗愈系列：轻疗愈+轻疗愈2+轻疗愈"
+    }, {
+        "img": "./image/health4.jpg",
+        "price": "￥51.80",
+        "text": "走出强迫症 找回美丽的日子"
+    }, {
+        "img": "./image/health5.jpg",
+        "price": "￥29.00",
+        "text": "包邮 分心不是我的错 心理读物心理百科"
+    }, {
+        "img": "./image/health6.jpg",
+        "price": "￥36.00",
+        "text": "青少年心理健康辅导 畅销书籍 教育 正版 "
+    }]
+}, {
+    "type": "综合性图书类",
+    "item": [{
+        "img": "./image/all1.jpg",
+        "price": "￥49.80",
+        "text": "励志成功经典口才心理学书籍大全集8册"
+    }, {
+        "img": "./image/all2.jpg",
+        "price": "￥48.80",
+        "text": "全8册 处世哲学书 鬼谷子 墨菲定律 人性"
+    }, {
+        "img": "./image/all3.jpg",
+        "price": "￥162.00",
+        "text": "美国国家育儿出版物金奖绘 "
+    }, {
+        "img": "./image/all4.jpg",
+        "price": "￥52.30",
+        "text": "一看就停不下来的中国史(京东定制版) "
+    }, {
+        "img": "./image/all5.jpg",
+        "price": "￥73.00",
+        "text": "中国科幻基石丛书：三体（套装1-3册）"
+    }]
+}, {
+    "type": "作品集类",
+    "item": [{
+        "img": "./image/works1.jpg",
+        "price": "￥141.00",
+        "text": "十宗罪全套 全集6本 宗罪前传 1 2 3 4 5 共6册 小说 新华书店自营 蜘蛛 正版"
+    }, {
+        "img": "./image/works2.jpg",
+        "price": "￥95.00",
+        "text": "全12册 少年探索发现系列 你不可不知的世界未解之谜大全集 中小学生科普类"
+    }, {
+        "img": "./image/works3.jpg",
+        "price": "￥28.30",
+        "text": "Bantam Classics 经典系列：福尔摩斯探案全集"
+    }, {
+        "img": "./image/works4.jpg",
+        "price": "￥29.90",
+        "text": "唐诗宋词三百首（大全集）（珍藏本）"
+    }, {
+        "img": "./image/works5.jpg",
+        "price": "￥245.00",
+        "text": "冰与火之歌英文原版A Song of Ice and Fire全集1-5皮革豪华收藏版"
+    }]
+}, {
+    "type": "IT类",
+    "item": [{
+        "img": "./image/IT1.jpg",
+        "price": "￥30.30",
+        "text": "信息系统项目管理师计算类试题真题详解"
+    }, {
+        "img": "./image/IT2.jpg",
+        "price": "￥76.60",
+        "text": "移动Web前端高效开发实战"
+    }, {
+        "img": "./image/IT3.jpg",
+        "price": "￥70.20",
+        "text": "JavaScript从入门到精通（第2版）（配光盘）（软件开发视频大讲堂）"
+    }, {
+        "img": "./image/IT4.jpg",
+        "price": "￥62.40",
+        "text": "指尖上行 移动前端开发进阶之路"
+    }, {
+        "img": "./image/IT5.jpg",
+        "price": "￥69.80",
+        "text": "人民邮电社直供JavaScript忍者秘籍"
+    }]
+}, {
+    "type": "历史类",
+    "item": [{
+        "img": "./image/history1.jpg",
+        "price": "￥46.40",
+        "text": "中国教育史（第3版）/教育类专业基础课"
+    }, {
+        "img": "./image/history2.jpg",
+        "price": "￥52.30",
+        "text": "一看就停不下来的中国史(京东定制版)"
+    }, {
+        "img": "./image/history3.jpg",
+        "price": "￥176.00",
+        "text": "中国通史 全史/历史/史记/中国史 豪华精装全6册"
+    }, {
+        "img": "./image/history4.jpg",
+        "price": "￥199.80",
+        "text": "柳如是別傳（套装上中下册）"
+    }, {
+        "img": "./image/history5.jpg",
+        "price": "￥659.80",
+        "text": "剑桥中国史（全11册）【荐书联盟推荐】"
+    }, {
+        "img": "./image/history1.jpg",
+        "price": "￥46.40",
+        "text": "中国教育史（第3版）/教育类专业基础课"
+    }, {
+        "img": "./image/history2.jpg",
+        "price": "￥52.30",
+        "text": "一看就停不下来的中国史(京东定制版)"
+    }, {
+        "img": "./image/history3.jpg",
+        "price": "￥176.00",
+        "text": "中国通史 全史/历史/史记/中国史 豪华精装全6册"
+    }, {
+        "img": "./image/history4.jpg",
+        "price": "￥199.80",
+        "text": "柳如是別傳（套装上中下册）"
+    }, {
+        "img": "./image/history5.jpg",
+        "price": "￥659.80",
+        "text": "剑桥中国史（全11册）【荐书联盟推荐】"
+    }]
+}]

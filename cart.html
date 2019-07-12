@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/template-native.js"></script>
+    <title>书城-购物车</title>
+</head>
+
+<body>
+    <div class="jd_layout">
+        <!-- 页面头部 -->
+        <div class="jd_header">
+            <div class="banxin clearfix">
+                <div class="f_right jd_header_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li id="login"><a href="./login.html">你好，请登录</a></li>
+                        <li class="active"><a href="./register.html">免费注册</a></li>
+                        <li><a href="javascript:;">我的购物车</a></li>
+                        <li class="pRight"><a href="javascript:;">我的书城<span></span></a></li>
+                        <li><a href="javascript:;">书城会员</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo图标 -->
+        <div class="logo">
+            <div class="banxin">
+                <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="line">
+            <div class="banxin">
+                <ul class="cart_list_th clearfix">
+                    <li class="col01">商品名称</li>
+                    <li class="col03">商品价格</li>
+                    <li class="col04">数量</li>
+                    <li class="col05">小计</li>
+                    <li class="col06">操作</li>
+                </ul>
+                <div class="list">
+
+                </div>
+
+                <ul class="settlements">
+                    <li class="col01"><input type="checkbox" name=""></li>
+                    <li class="col02">全选</li>
+                    <!-- <li class="col03">合计(不含运费)：<span>¥</span><em class="sum">0</em><br>共计<b class="num">0</b>件商品</li> -->
+                    <li class="col04"><a href="javascript:;">去结算</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function() {
+        // 渲染页面
+        var proObj = JSON.parse(window.localStorage.getItem("pro"));
+        console.log(proObj)
+        if (proObj) {
+            var htmlStr = template("tp", {
+                data: proObj
+            })
+            $(".list").html(htmlStr);
+        } else {
+            return;
+        }
+        // 账号
+        var userName = window.localStorage.getItem("useName");
+        var userNameJson = JSON.parse(userName)
+        if (userNameJson != null) {
+            $("#login").html("账号:" + userNameJson.name);
+        };
+        //删除商品
+        $(".col08").click(function() {
+            $(this).parent().remove();
+            var zifupro = window.localStorage.getItem("pro");
+            var newPro = JSON.parse(zifupro)
+            var index = $(this).attr("data-index")
+            var npro = [];
+            for (var i = 0; i < newPro.length; i++) {
+                if (i != index) {
+                    npro.push(newPro[i]);
+                }
+            }
+            console.log(npro)
+            var proStr = JSON.stringify(npro);
+            window.localStorage.setItem("pro", proStr)
+        });
+        // // 商品处理
+        // var single = $(".cart_list_td .col05").html();
+        // if (single.indexOf("￥") > -1) {
+        //     var singlePrice = single.split("￥")[1]
+        // }
+        // var flag = $(".cart_list_td .col01 input[type='checkbox']").prop("checked");
+        // $(".add").siblings(".num_show").attr("value", 1);
+        // console.log(flag)
+        // price(singlePrice, 1)
+        // $(".inputC").click(function() {
+        //     // alert("test")
+        //     if (!flag) {
+        //         var proNum = window.localStorage.getItem("proNum")
+        //         price(singlePrice, proNum)
+        //         flag = true;
+        //     } else {
+        //         $(".settlements .sum").html(0);
+        //         $(".settlements .num").html(0);
+        //         flag = false;
+        //     }
+        // })
+
+        // 增加商品数量
+        $(".add").click(function() {
+                var ele = $(this).prev();
+                var res1 = parseInt(ele.val());
+                res1++;
+                ele.attr("value", res1);
+                var col7 = ele.parent().parent().next();
+                var col5 = ele.parent().parent().prev();
+                var sPrice = col5.html();
+                if (sPrice.indexOf("￥") > -1) {
+                    var sgPrice = sPrice.split("￥")[1]
+                }
+                var summary = sgPrice * res1;
+                col7.html("￥" + summary)
+            })
+            // 减少商品数量
+        $(".minus").click(function() {
+            var ele = $(this).next();
+            var res2 = parseInt(ele.val());
+            res2--;
+            if (res2 == 0) {
+                return;
+            }
+            ele.attr("value", res2);
+            var col7 = ele.parent().parent().next();
+            var col5 = ele.parent().parent().prev();
+            console.log(col5)
+            var sPrice = col5.html();
+            if (sPrice.indexOf("￥") > -1) {
+                var sgPrice = sPrice.split("￥")[1]
+            }
+            var summary = sgPrice * res2;
+            col7.html("￥" + summary)
+            console.log(res2)
+        })
+
+        // 全选
+        $(".settlements .col01 input[type='checkbox']").click(function() {
+            var flag1 = $(this).prop("checked");
+            if (flag1 == true) {
+                $(".cart_list_td .col01 input[type='checkbox']").prop("checked", "true");
+                flag1 = false;
+            } else if (flag1 == false) {
+                $(".cart_list_td .col01 input[type='checkbox']").prop("checked", false);
+                flag1 = true
+            }
+        })
+
+        //存储商品数据（数量和价格）
+        var num = [];
+        var countArr = [];
+        var val = 0;
+        var counts = "";
+        $(".col04").click(function() {
+            var show = ($(".num_show"));
+            var col07 = $(".col07");
+            console.log(show)
+            for (let i = 0; i < show.length; i++) {
+                val = show[i].value;
+                counts = col07[i].innerText;
+                num.push(val);
+                countArr.push(counts);
+            }
+            var numJsonStr = JSON.stringify(num);
+            var countArrJsonStr = JSON.stringify(countArr);
+            console.log(countArrJsonStr)
+            window.localStorage.setItem("allNum", numJsonStr)
+            window.localStorage.setItem("allPrice", countArrJsonStr)
+            window.location.href = "cite.html"
+        })
+    })
+</script>
+<script type="text/template" id="tp">
+    <%for( var i=0; i < data.length; i++){%>
+        <ul class="cart_list_td clearfix">
+            <li class="col01"><input class="inputC" type="checkbox" name="" checked></li>
+            <li class="col02"><img src="<%=data[i].img%>"></li>
+            <li class="col05">
+                <%=data[i].price%>
+            </li>
+            <li class="col06">
+                <div class="num_add">
+                    <span class="minus f_left">-</span>
+                    <input type="text" class="num_show f_left" value="1">
+                    <span class="add f_left">+</span>
+                </div>
+            </li>
+            <li class="col07">
+                <%=data[i].price%>
+            </li>
+            <li class="col08" data-index="<%=i%>"><a href="javascript:;">删除</a></li>
+        </ul>
+        <%}%>
+</script>

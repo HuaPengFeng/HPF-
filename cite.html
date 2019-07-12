@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/cite.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/template-native.js"></script>
+    <title>书城-购物车</title>
+</head>
+
+<body>
+    <div class="jd_layout">
+        <!-- 页面头部 -->
+        <div class="jd_header">
+            <div class="banxin clearfix">
+                <div class="f_right jd_header_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li id="login"><a href="./login.html">你好，请登录</a></li>
+                        <li class="active"><a href="./register.html">免费注册</a></li>
+                        <li><a href="javascript:;">我的购物车</a></li>
+                        <li class="pRight"><a href="javascript:;">我的书城<span></span></a></li>
+                        <li><a href="javascript:;">书城会员</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo图标 -->
+        <div class="logo">
+            <div class="banxin">
+                <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="banxin">
+            <div class="right_content clearfix">
+                <h3 class="common_title2">编辑地址</h3>
+                <div class="site_con">
+                    <div class="form_group">
+                        <label>收件人：</label>
+                        <input class="uName" type="text" name="">
+                    </div>
+                    <div class="form_group form_group2">
+                        <label>详细地址：</label>
+                        <textarea class="site_area"></textarea>
+                    </div>
+                    <div class="form_group">
+                        <label>邮编：</label>
+                        <input class="post" type="text" name="">
+                    </div>
+                    <div class="form_group">
+                        <label>手机：</label>
+                        <input class="phone" type="text" name="">
+                    </div>
+                    <a href="order.html"><input type="submit" name="" value="提交" class="info_submit"></a>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+<script>
+    $(".info_submit").click(function() {
+        console.log("test")
+        var uName = $(".uName").val();
+        var address = $(".site_area").val();
+        var post = $(".post").val();
+        var tel = $(".phone").val();
+        var str = address + "&nbsp;&nbsp" + "邮编：" + post + "&nbsp;&nbsp;&nbsp;&nbsp" + "收件人：" + uName + "&nbsp;&nbsp" + tel;
+        console.log(str)
+        window.localStorage.setItem("user", str)
+    })
+</script>

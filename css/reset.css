@@ -1,0 +1,65 @@
+html,
+body,
+div,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+form,
+input,
+textarea,
+table,
+tr,
+td,
+th {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button,
+textarea {
+    border: 0;
+    outline: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    opacity: 0;
+}
+
+.boBdt {
+    border-top: 0px !important;
+}
+
+.no_mgRight {
+    margin-right: 0 !important;
+}

@@ -1,0 +1,665 @@
+html,
+body {
+  width: 100%;
+}
+.jd_layout {
+  width: 100%;
+  font-size: 14px;
+  font-family: Arial, Verdana, "\5b8b\4f53";
+  font-weight: 400;
+}
+.jd_layout .logo {
+  padding: 20px 0;
+}
+.banxin {
+  width: 1210px;
+  margin: 0 auto;
+}
+/*  页面头部 start */
+.jd_header {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  color: #666;
+  font-size: 12px;
+  background-color: #f1f1f1;
+}
+.jd_header .jd_header_city {
+  position: relative;
+  padding-right: 25px;
+}
+.jd_header .jd_header_city span {
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  overflow: hidden;
+  right: 5px;
+  top: 11px;
+}
+.jd_header .jd_header_city span::after {
+  content: '◇';
+  display: block;
+  position: absolute;
+  top: -14px;
+}
+.jd_header_nav ul li {
+  float: left;
+  padding: 0 10px;
+  position: relative;
+}
+.jd_header_nav ul li a {
+  width: 100%;
+}
+.jd_header_nav ul li a span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 11px;
+  right: 13px;
+}
+.jd_header_nav ul li.pRight {
+  padding: 0 25px 0 10px;
+}
+.jd_header_nav ul li.pLeft {
+  padding: 0 25px 0 25px;
+}
+.jd_header_nav ul li.active a {
+  color: #c81623 !important;
+}
+/*  页面头部 css end  */
+/* 顶部广告 css start */
+.jd_top_banner {
+  width: 100%;
+  height: 80px;
+  background-color: #CD5233;
+  overflow: hidden;
+  transition: all 1s linear;
+}
+.jd_top_banner .box {
+  position: relative;
+}
+.jd_top_banner .box a {
+  display: block;
+}
+.jd_top_banner .box a img {
+  display: block;
+}
+.jd_top_banner .box span.close_btn {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.jd_top_banner .box span.close_btn:hover {
+  cursor: pointer;
+  background-color: darkred;
+}
+/* 顶部广告 css end */
+.jd_search .search_left {
+  width: 362px;
+  height: 60px;
+  padding: 20px 0;
+  float: left;
+  position: relative;
+}
+.jd_search .search_left a {
+  display: block;
+  width: 270px;
+  height: 60px;
+  background: url(../image/logo.png) no-repeat center;
+}
+.jd_search .search_center {
+  height: 36px;
+  margin-top: 25px;
+  float: left;
+}
+.jd_search .search_center input {
+  float: left;
+  width: 450px;
+  height: 32px;
+  border: 2px solid #c81623;
+  padding-left: 10px;
+  font: 14px/32px "microsoft yahei";
+  color: #666666;
+}
+.jd_search .search_center button {
+  float: left;
+  width: 80px;
+  height: 36px;
+  background-color: #c81623;
+  color: #fff;
+  font: 16px/36px "微软雅黑";
+  cursor: pointer;
+  padding: 0;
+}
+.jd_search .search_center ul li {
+  float: left;
+  margin-right: 7px;
+  margin-top: 5px;
+}
+.jd_search .search_center ul li a {
+  color: #666;
+  font-size: 12px;
+}
+.jd_search .search_center ul li a.color {
+  color: #c81623;
+}
+.jd_search .search_right {
+  width: 102px;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 43px;
+  margin: 25px 60px 0 0;
+  border: 1px solid #DFDFDF;
+  background-color: #F9F9F9;
+  float: right;
+  position: relative;
+}
+.jd_search .search_right a {
+  color: #666;
+  text-decoration: none;
+  font-size: 13px;
+}
+.jd_search .search_right span.search_car_icon1 {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 18px;
+  height: 16px;
+  background: url(../image/tel.png) no-repeat 0 -57px;
+}
+.jd_search .search_right span.search_car_icon2 {
+  position: absolute;
+  top: -4px;
+  width: 16px;
+  height: 14px;
+  background-color: #C81623;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 7px 7px 7px 0;
+}
+.jd_search .search_right span.search_car_icon3 {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-left: 1px solid #333;
+  border-top: 1px solid #333;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+/*搜索框区块 end*/
+/* 导航栏 star*/
+.jd_nav {
+  width: 100%;
+  position: relative;
+}
+.jd_nav .jd_nav_bottom {
+  height: 10px;
+  width: 100%;
+  background-image: url("../image/bottombanner.jpg");
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -9;
+}
+.jd_nav .jd_nav_cate a {
+  display: block;
+  width: 200px;
+  height: 46px;
+  background: url(../image/img1.jpg) no-repeat;
+  padding-left: 10px;
+  font: 500 15px/46px "microsoft yahei";
+  color: #fff;
+}
+.jd_nav .jd_nav_list ul li {
+  float: left;
+}
+.jd_nav .jd_nav_list ul li a {
+  display: block;
+  height: 46px;
+  padding: 0 20px;
+  font: 16px/46px "微软雅黑";
+  color: #333333;
+}
+.jd_nav .jd_nav_free {
+  position: relative;
+  z-index: -666;
+}
+/* 导航栏 end*/
+/* 主体区块 star*/
+.jd_contain {
+  width: 100%;
+}
+.jd_contain .jd_contain_left {
+  float: left;
+  width: 210px;
+  height: 466px;
+  background-color: #c81623;
+}
+.jd_contain .jd_contain_left ul li {
+  position: relative;
+  height: 31px;
+  padding: 0 12px 0 9px;
+  color: #fff;
+  margin-left: 1px;
+  font: 400 14px/31px "微软雅黑";
+}
+.jd_contain .jd_contain_left ul li a {
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+.jd_contain .jd_contain_left ul li span {
+  height: 6px;
+  width: 6px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 15px;
+  top: 12px;
+}
+.jd_contain .jd_contain_left ul li:hover {
+  background-color: #fff;
+}
+.jd_contain .jd_contain_left ul li:hover a {
+  color: #c81623;
+}
+.jd_contain .jd_contain_left ul li:hover span {
+  border-color: #c81623;
+}
+.jd_contain .jd_contain_center {
+  float: left;
+  width: 730px;
+  height: 454px;
+  margin: 12px 0 0 10px;
+  background-color: pink;
+  overflow: hidden;
+  position: relative;
+}
+.jd_contain .jd_contain_center .Num_box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -66px;
+}
+.jd_contain .jd_contain_center .Num_box ol li {
+  float: left;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 18px;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.jd_contain .jd_contain_center .Num_box ol li.active {
+  background-color: orange;
+}
+.jd_contain .jd_contain_center .trans {
+  position: absolute;
+  top: 196px;
+  width: 28px;
+  height: 62px;
+  background: rgba(0, 0, 0, 0.3);
+}
+.jd_contain .jd_contain_center .trans:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.jd_contain .jd_contain_center .trans_left {
+  left: 0;
+}
+.jd_contain .jd_contain_center .trans_left span {
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 10px;
+  top: 26px;
+}
+.jd_contain .jd_contain_center .trans_right {
+  right: 0;
+}
+.jd_contain .jd_contain_center .trans_right span {
+  display: block;
+  height: 6px;
+  width: 6px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 10px;
+  top: 26px;
+}
+.jd_contain .jd_contain_center ul {
+  width: 4380px;
+}
+.jd_contain .jd_contain_center ul li {
+  float: left;
+}
+.jd_contain .jd_contain_center ul li a {
+  display: block;
+}
+.jd_contain .jd_contain_center ul li a img {
+  display: block;
+  height: 454px;
+  width: 730px;
+}
+.jd_contain .jd_contain_right {
+  float: left;
+  width: 248px;
+  height: 452px;
+  margin-top: 12px ;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+}
+.jd_contain .jd_contain_right .contain_right_top {
+  height: 32px;
+  width: 208px;
+  padding: 0 20px;
+  border-bottom: 1px dotted #ccc;
+}
+.jd_contain .jd_contain_right .contain_right_top h3 {
+  font: 400 16px/32px "";
+}
+.jd_contain .jd_contain_right .contain_right_top a {
+  line-height: 32px;
+  font: 400 12px/32px "consolas";
+}
+.jd_contain .jd_contain_right ul {
+  padding: 5px 0 4px 15px;
+  border-bottom: 1px dotted #ccc;
+  position: relative;
+  z-index: 6666;
+}
+.jd_contain .jd_contain_right ul li {
+  height: 24px;
+  line-height: 24px;
+}
+.jd_contain .jd_contain_right ul li a {
+  font-size: 12px;
+  color: #666;
+}
+.jd_contain .jd_contain_right ul li a span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.jd_contain .jd_contain_right ol li:hover a {
+  color: #c81623 !important;
+}
+.jd_contain .jd_contain_right ol li {
+  float: left;
+  border: 1px solid #ccc;
+  margin: -1px;
+  box-sizing: border-box;
+  width: 64px;
+  height: 74px;
+  position: relative;
+  background-color: #fff;
+}
+.jd_contain .jd_contain_right ol li span.spe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 15px;
+  background-image: url(../image/spe.png);
+  display: block;
+}
+.jd_contain .jd_contain_right ol li a {
+  position: relative;
+  padding-top: 50px;
+  display: block;
+  text-align: center;
+}
+.jd_contain .jd_contain_right ol li a span.icon {
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../image/fly.png");
+}
+.jd_contain .jd_contain_right ol li a span.icon1 {
+  background-position: 0 0;
+}
+.jd_contain .jd_contain_right ol li a span.icon2 {
+  background-position: 0 -25px;
+}
+.jd_contain .jd_contain_right ol li a span.icon3 {
+  background-position: 0 -50px;
+}
+.jd_contain .jd_contain_right ol li a span.icon4 {
+  background-position: 0 -75px;
+}
+.jd_contain .jd_contain_right ol li a span.icon5 {
+  background-position: 0 -100px;
+}
+.jd_contain .jd_contain_right ol li a span.icon6 {
+  background-position: 0 -125px;
+}
+.jd_contain .jd_contain_right ol li a span.icon7 {
+  background-position: 0 -150px;
+}
+.jd_contain .jd_contain_right ol li a span.icon8 {
+  background-position: 0 -175px;
+}
+.jd_contain .jd_contain_right ol li a span.icon9 {
+  background-position: 0 -200px;
+}
+.jd_contain .jd_contain_right ol li a span.icon10 {
+  background-position: 0 -225px;
+}
+.jd_contain .jd_contain_right ol li a span.icon11 {
+  background-position: 0 -250px;
+}
+.jd_contain .jd_contain_right ol li a span.icon12 {
+  background-position: 0 -275px;
+}
+.jd_contain .jd_contain_right .jd_contain_right_img {
+  margin-top: 2px;
+}
+.jd_contain .jd_contain_right .jd_contain_right_img a img {
+  width: 249px;
+  height: 72px;
+  display: block;
+}
+/* 主体区块 end*/
+/* 活动栏 star*/
+.jd_active {
+  width: 100%;
+  margin-top: 10px;
+}
+.jd_active .banxin .jd_active_main {
+  width: 100%;
+  height: 120px;
+}
+.jd_active .banxin .jd_active_main a {
+  float: left;
+  margin-right: 15px;
+}
+.jd_active .banxin .jd_active_main a img {
+  display: block;
+}
+/* 活动栏 end*/
+/* 口号栏 star*/
+.jd_slogan {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #f5f5f5;
+  height: 94px;
+}
+.jd_slogan .banxin ul {
+  width: 100%;
+}
+.jd_slogan .banxin ul li {
+  margin-top: 20px;
+  width: 25%;
+  float: left;
+}
+/* 口号栏 star*/
+/* 购物指南 star*/
+.jd_shoppingWay {
+  width: 100%;
+  margin-top: 15px;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box {
+  width: 100%;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left {
+  width: 900px;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left .last_ul {
+  width: 100px;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left ul {
+  width: 200px;
+  float: left;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left ul li.h {
+  height: 35px;
+  font: 400 16px/35px "microsoft yahei";
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left ul li {
+  line-height: 20px;
+  font-size: 13px;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left ul li a {
+  color: #666;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_left ul li:hover a {
+  color: #c81623;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_right {
+  width: 207px;
+  height: 170px;
+  color: #666;
+  margin-right: 30px;
+  padding-left: 17px;
+  background: url("../image/china.png") no-repeat left bottom;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_right h3 {
+  height: 35px;
+  font: 400 16px/35px "microsoft yahei";
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_right p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_right a {
+  float: right;
+  font-size: 13px;
+  color: #666;
+}
+.jd_shoppingWay .banxin .jd_shoppingWay_box .jd_shoppingWay_right a:hover {
+  color: #c81623;
+}
+/* 购物指南 star*/
+/* 底部链接 star*/
+.jd_link {
+  width: 100%;
+}
+.jd_link .banxin .jd_footer {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+}
+.jd_link .banxin .jd_footer .jd_footer_link {
+  padding-top: 20px;
+}
+.jd_link .banxin .jd_footer .jd_footer_link .jd_footer_link_box {
+  width: 858px;
+  margin: 0 auto;
+}
+.jd_link .banxin .jd_footer .jd_footer_link .jd_footer_link_box ul li {
+  float: left;
+}
+.jd_link .banxin .jd_footer .jd_footer_link .jd_footer_link_box ul li a {
+  font-size: 13px;
+  color: #666;
+  margin: 0 10px;
+}
+.jd_link .banxin .jd_footer p {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  line-height: 23px;
+}
+.jd_link .banxin .jd_footer p.mgT {
+  margin-top: 10px;
+  padding-left: 30px;
+}
+.jd_link .banxin .jd_footer .icon {
+  position: relative;
+}
+.jd_link .banxin .jd_footer .icon::after {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-image: url("../image/guohui.png");
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+.jd_link .banxin .jd_footer .footer_bottom_pic {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+.jd_link .banxin .jd_footer .footer_bottom_pic img {
+  margin: 0 5px;
+}
+/* 底部链接 end*/
+/* 产品列表 start*/
+.product_list .header {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f5f5f5;
+  color: #C81623;
+  font-size: 18px;
+}
+.product_list .product_list_box {
+  margin-top: 20px;
+}
+.product_list .product_list_box .thumbnail:hover {
+  box-shadow: 1px 1px 3px #ccc;
+}
+.product_list .product_list_box .thumbnail p a {
+  color: #fff;
+}
+.product_list .product_list_box .thumbnail p.active {
+  font-size: 14px;
+  width: 100%;
+  height: 20px;
+  color: #666 !important;
+  overflow: hidden;
+}
+.product_list .product_list_box .thumbnail p.price {
+  color: red !important;
+}
+/* 产品列表 end*/
+/*购物车 star*/
+.line {
+  width: 100%;
+  border-top: 2px solid #c81623;
+}
+/*购物车 end*/

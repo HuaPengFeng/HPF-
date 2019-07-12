@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/template-native.js"></script>
+    <title>书城-订单</title>
+</head>
+
+<body>
+    <div class="jd_layout">
+        <div class="msk">
+            <div class="msk_body">
+                <div class="msk_header">
+                    <span class="closeBtn">x</span>
+                    <form action="">
+                        <label><input class="weChat" type="radio" name="way" value="">微信支付</label>
+                        <label><input class="zhifubao" type="radio" name="way" value="" checked>支付宝支付</label>
+                    </form>
+                </div>
+                <div class="msk_content">
+                    <img src="./image/zhifubao.JPG" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 页面头部 -->
+        <div class="jd_header">
+            <div class="banxin clearfix">
+                <div class="f_right jd_header_nav">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li id="login"><a href="./login.html">你好，请登录</a></li>
+                        <li class="active"><a href="./register.html">免费注册</a></li>
+                        <li><a href="javascript:;">我的购物车</a></li>
+                        <li class="pRight"><a href="javascript:;">我的书城<span></span></a></li>
+                        <li><a href="javascript:;">书城会员</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo图标 -->
+        <div class="logo">
+            <div class="banxin">
+                <a href="./index.html"><img src="./image/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="line">
+            <div class="banxin">
+                <div class="address">收货地址：<span class="item"></span></div>
+                <ul class="cart_list_th clearfix">
+                    <li class="col01">商品名称</li>
+                    <li class="col03">商品价格</li>
+                    <li class="col04">商品数量</li>
+                    <li class="col05">小计(元)</li>
+                    <li class="col06">操作</li>
+                </ul>
+                <div class="list">
+                    <!-- 动态渲染 -->
+                </div>
+
+                <ul class="settlements">
+                    <li class="col01"><input type="checkbox" name=""></li>
+                    <li class="col02">全选</li>
+                    <li class="col03">合计(不含运费)：<span></span><em class="sum">0</em><br>共计<b class="num">0</b>件商品</li>
+                    <li class="col04"><a href="javascript:;">提交订单</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function() {
+        // 渲染页面
+        var proObj = JSON.parse(window.localStorage.getItem("pro"));
+        console.log(proObj)
+        if (proObj) {
+            var htmlStr = template("tp", {
+                data: proObj
+            })
+            $(".list").html(htmlStr);
+        } else {
+            return;
+        }
+        // 账号
+        var userName = window.localStorage.getItem("useName");
+        var userNameJson = JSON.parse(userName)
+        if (userNameJson != null) {
+            $("#login").html("账号:" + userNameJson.name);
+        };
+        // 商品结算处理
+        var numArrStr = window.localStorage.getItem("allNum");
+        var allPriceStr = window.localStorage.getItem("allPrice");
+        var numArr = JSON.parse(numArrStr);
+        var allPriceArr = JSON.parse(allPriceStr);
+        var number = $(".number");
+        var priceHtml = $(".allPrice");
+        var allCounts = 0;
+        for (var i = 0; i < numArr.length; i++) {
+            number[i].innerHTML = numArr[i];
+            priceHtml[i].innerHTML = allPriceArr[i];
+        }
+        var allnum = sum(numArr);
+        $(".num").html(allnum);
+        var allp = sum(allPriceArr);
+        console.log(allp)
+        $(".sum").html(allp)
+
+        function sum(arr) {
+            var s = 0;
+            var arr2 = [];
+            var newArr = [];
+            if (arr.length == 0) {
+                return 0;
+            } else if (arr.length == 1) {
+                return arr[0];
+            } else {
+                for (var i = 0; i < arr.length; i++) {
+                    if (arr[i].indexOf("￥") > -1) {
+                        // for (var j = 0; j < arr.length; j++) {
+                        newArr.push(arr[i].split("￥")[1]);
+                        console.log(newArr)
+                            // }
+                        arr2.push(Number(newArr[i]))
+                        console.log(arr2)
+                        s += arr2[i];
+                    } else {
+                        arr2.push(Number(arr[i]))
+                        s += arr2[i];
+                    }
+                }
+                return s;
+            }
+        }
+        //全选
+        $(".settlements .col01 input[type='checkbox']").click(function() {
+                var flag1 = $(this).prop("checked");
+                if (flag1 == true) {
+                    $(".cart_list_td .col01 input[type='checkbox']").prop("checked", "true");
+                    flag1 = false;
+                } else if (flag1 == false) {
+                    $(".cart_list_td .col01 input[type='checkbox']").prop("checked", false);
+                    flag1 = true
+                }
+            })
+            //计算商品价格
+        function price(p, cols) {
+            var p1 = Number(p);
+            var cols1 = Number(cols);
+            var total = (p1 * cols1);
+            $(".cart_list_td .col07").html(total + "元");
+            $(".settlements .sum").html(total);
+            $(".settlements .num").html(cols1);
+        }
+        // 把账号显示在页面
+        var userName = window.localStorage.getItem("useName");
+        var userNameJson = JSON.parse(userName)
+        if (userNameJson != null) {
+            $("#login").html("账号:" + userNameJson.name);
+        }
+        //填写收获地址
+        var user = window.localStorage.getItem("user");
+        var userCenter = String(user)
+        console.log(userCenter)
+        $(".item").html(userCenter);
+        //弹窗
+        $(".col04").click(function() {
+            $(".msk").css("display", "block")
+        });
+        $("span.closeBtn").click(function() {
+            $(".msk").css("display", "none")
+        });
+        $(".weChat").click(function() {
+            $(".msk_content img").attr("src", "./image/weChat.jpg")
+        });
+        $(".zhifubao").click(function() {
+            $(".msk_content img").attr("src", "./image/zhifubao.JPG")
+        })
+    })
+</script>
+<script type="text/template" id="tp">
+    <%for( var i=0; i < data.length; i++){%>
+        <ul class="cart_list_td clearfix">
+            <li class="col01"><input class="inputC" type="checkbox" name="" checked></li>
+            <li class="col02"><img src="<%=data[i].img%>"></li>
+            <li class="col05">
+                <%=data[i].price%>
+            </li>
+            <li class="col06">
+                <div class="number">
+                    1
+                </div>
+            </li>
+            <li class="col07">
+                <span class="allPrice"></span>
+            </li>
+            <li class="col08"><a href="javascript:;">再来一单</a></li>
+        </ul>
+        <%}%>
+</script>
